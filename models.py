@@ -496,6 +496,6 @@ class ALOCC_Model(object):
         # plt.plot(np.array(lst_discriminator_v))
         # f.savefig('samples/d_values.jpg')
 
-        scipy.misc.imsave('./' + self.sample_dir + '/ALOCC_generated.jpg',
-                          montage(np.array(lst_generated_img)[:, :, :, 0]))
-        scipy.misc.imsave('./' + self.sample_dir + '/ALOCC_input.jpg', montage(np.array(tmp_lst_slices)[:, :, :, 0]))
+        # scipy.misc.imsave('./' + self.sample_dir + '/ALOCC_generated.jpg',
+        #                   montage(np.array(lst_generated_img)[:, :, :, 0]))
+        # scipy.misc.imsave('./' + self.sample_dir + '/ALOCC_input.jpg', montage(np.array(tmp_lst_slices)[:, :, :, 0]))
