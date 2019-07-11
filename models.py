@@ -191,7 +191,7 @@ class ALOCC_Model(object):
 
     # export images
     sample_inputs = np.array(sample).astype(np.float32)
-    scipy.misc.imsave('./{}/train_input_samples.jpg'.format(config.sample_dir), montage(sample_inputs[:,:,:,0]))
+    # scipy.misc.imsave('./{}/train_input_samples.jpg'.format(config.sample_dir), montage(sample_inputs[:,:,:,0]))
 
     # load previous checkpoint
     counter = 1
@@ -293,8 +293,8 @@ class ALOCC_Model(object):
             )
             manifold_h = int(np.ceil(np.sqrt(samples.shape[0])))
             manifold_w = int(np.floor(np.sqrt(samples.shape[0])))
-            save_images(samples, [manifold_h, manifold_w],
-                  './{}/train_{:02d}_{:04d}.png'.format(config.sample_dir, epoch, idx))
+            # save_images(samples, [manifold_h, manifold_w],
+            #       './{}/train_{:02d}_{:04d}.png'.format(config.sample_dir, epoch, idx))
             print("[Sample] d_loss: %.8f, g_loss: %.8f" % (d_loss, g_loss))
           # ====================================================================================================
           else:
