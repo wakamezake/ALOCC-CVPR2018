@@ -6,6 +6,10 @@ name = "pypi"
 [packages]
 tensorflow-gpu = "==1.13.1"
 scipy = "*"
+matplotlib = "*"
+pillow = "*"
+imageio = "*"
+scikit-image = "*"
 
 [dev-packages]
 
