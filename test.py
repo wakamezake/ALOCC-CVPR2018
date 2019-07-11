@@ -1,11 +1,6 @@
-import tensorflow as tf
 from tensorflow.examples.tutorials.mnist import input_data
-from utils import pp, visualize, to_json, show_all_variables
 from models import ALOCC_Model
-import matplotlib.pyplot as plt
 from kh_tools import *
-import numpy as np
-import scipy.misc
 from utils import *
 import time
 import os
